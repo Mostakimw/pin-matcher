@@ -3,7 +3,7 @@ const generateInput = document.getElementById('generate-input');
 
 generateInputBtn.addEventListener('click', function() {
     const randomNumber = Math.round(1000 + Math.random() * 9000);
-    generateInput.value = randomNumber
+    generateInput.value = randomNumber;
 })
 
 const typeNumberInput = document.getElementById('display');

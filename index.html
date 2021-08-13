@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pin Matcher</title>
+</head>
+<body>
+    <div class="container">
+        <form action="random" class="generate-number">
+            <input type="text" id="generate-input">
+            <input type="button" value="Generate Pin" id="btn">
+        </form>
+        <div class="add-number-container">
+            <input type="text" id="display" disabled>
+            <div class="keys">
+                <div class="row">
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                </div>
+                <div class="row">
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                </div>
+                <div class="row">
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                </div>
+                <div class="row">
+                    <button value=">">></button>
+                    <button value="0">0</button>
+                    <button value="C">C</button>
+                </div>
+            </div>
+            <button id="submitBtn">Submit</button>
+            <p>3 try left</p>
+        </div>
+    </div>
+
+   
+        <div class="not-matched"><p><i class="fas fa-times"></i>Go and Fuck yourself.</p></div>
+        <div class="matched"><p><i class="fas fa-check-square"></i>Your machine has been successfully hacked</p></div>
+    
+
+    <h1 style="color: white; display: none;">hi</h1>
+
+    <script src="script.js"></script>
+</body>
+</html>

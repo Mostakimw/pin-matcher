@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #222;
+}
+.container {
+    display: flex;
+    max-width: 1300px;
+    min-height: 300px;   
+    margin: auto;
+}
+.generate-number {
+    background: rgba(5, 3, 31, 0.474);
+    flex-basis: 45%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 90px;
+}
+.add-number-container {
+    background: rgba(5, 3, 31, 0.474);
+    flex-basis: 45%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 90px;
+}
+input {
+    width: 100%;
+    line-height: 48px;
+    border-radius: 5px;
+    border: 2px solid white;
+    outline: none;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    cursor: text;
+}
+#btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(73, 73, 219, 0.63);
+    border: 5px solid rgba(13, 22, 61, 0.623);
+    outline: none;
+    margin-bottom: 105px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+/* keys part */
+
+.row button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+    background-color: rgba(78, 114, 131, 0.842);
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    outline: none;
+    cursor: pointer;
+    display: block;
+    color: white;
+}
+#submitBtn {
+    width: 100%;
+    padding: 7px 0;
+    margin: 10px;
+    border-radius: 8px;
+    background: rgba(73, 73, 219, 0.63);
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.add-number-container p {
+    color: rgb(182, 58, 58);
+}
+
+
+.not-matched, .matched {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    display: none;
+}
+p {
+    background: rgba(5, 3, 31, 0.374);
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.fa-times {
+    color: red;
+    outline-color: 1px solid black;
+    margin-right: 10px ;
+}
+.fa-check-square {
+    color: green;
+    margin-right: 10px ;
+}

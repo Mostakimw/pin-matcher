@@ -2,7 +2,7 @@ const generateInputBtn = document.getElementById('btn');
 const generateInput = document.getElementById('generate-input');
 
 generateInputBtn.addEventListener('click', function() {
-    const randomNumber = Math.round(1000 + Math.random() * 9000);
+    const randomNumber = Math.round(1000 + Math.random() * 8000);
     generateInput.value = randomNumber;
 })
 
@@ -27,14 +27,18 @@ typeNumberBtn.forEach(function(button) {
 const submitBtn = document.getElementById("submitBtn");
         submitBtn.addEventListener('click', function() {
             if (generateInput.value == typeNumberInput.value) {
-                const blockDisplay = document.querySelector(".matched");
-                blockDisplay.style.display = 'block';
+                const matchedBlockDisplay = document.querySelector(".matched");
+                matchedBlockDisplay.style.display = 'block';
                 typeNumberInput.value = '';
+                const notMatchedBlockDisplay = document.querySelector(".not-matched");
+                notMatchedBlockDisplay.style.display = 'none';
             }
             else {
-                const blockDisplay = document.querySelector(".not-matched");
-                blockDisplay.style.display = 'block';
+                const notMatchedBlockDisplay = document.querySelector(".not-matched");
+                notMatchedBlockDisplay.style.display = 'block';
                 typeNumberInput.value = '';
+                const matchedBlockDisplay = document.querySelector(".matched");
+                matchedBlockDisplay.style.display = 'none';
             }
             
         })
